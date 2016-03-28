@@ -1,0 +1,418 @@
+/*
+Theme Name: Onphpid Themes
+Theme URI: http://www.onphpid.com/
+Author: onphpid atau tulis namamu
+Author URI: http://www.onphpid.com/
+Description: Belajar Membuat Theme WordPress untuk pemula
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: onphpid-theme
+Tags:
+*/
+
+
+/* global */
+
+a,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+
+/* header 
+ ===========================*/
+
+.header-container {
+    background: #354b60;
+    position: fixed;
+    /* static nav bar */
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.header-inner {}
+
+.header-inner .site-title {
+    margin: 0;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.header-inner .site-title a {
+    color: #f4f4f4;
+}
+
+
+/* navigation
+ ============================*/
+
+.header-inner .main-navigation {
+    line-height: 50px;
+}
+
+.header-inner .main-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-inner .main-navigation ul li {
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.header-inner .main-navigation ul li a {
+    color: #f4f4f4;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-inner .main-navigation ul li:hover,
+.header-inner .main-navigation ul li a:hover {
+    background: #8e44ad;
+}
+
+.header-inner .main-navigation ul li.menu-item-has-children .sub-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background: #354b60;
+    width: 200px;
+    left: 0;
+    z-index: 999;
+}
+
+.header-inner .main-navigation ul li.menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+
+.header-inner .main-navigation ul li.menu-item-has-children .sub-menu li {
+    display: block
+}
+
+
+/* body
+ ===========================*/
+
+.body-container {
+    padding-top: 50px;
+}
+
+.on-content-area article {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+header.header-post {
+    padding-top: 20px;
+}
+
+.title-post a {
+    color: #354B60;
+    font-size: 24px;
+}
+
+.title-post a:hover {
+    color: #8e44ad;
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0 1em 1em
+}
+
+img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0
+}
+
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+a img.alignright {
+    float: right;
+    margin: 0 0 1em 1em
+}
+
+a img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/* post-meta
+ ===========================*/
+
+.post-meta {
+    margin: 10px 0;
+}
+
+.post-meta span {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.post-meta .date-post {}
+
+.post-meta .author-post {}
+
+.post-meta .categories {}
+
+.post-meta .categories .post-categories {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.post-meta .categories .post-categories li {
+    display: inline-block;
+}
+
+.post-meta .categories .post-categories li:after {
+    content: ',';
+}
+
+.post-meta .categories .post-categories li:last-child:after {
+    content: '';
+}
+
+
+/* widget
+ ========================= */
+
+.widget {
+    padding-top: 20px;
+}
+
+.widget .widget-title {
+    margin: 0 0 5px;
+    padding: 0 0 5px;
+    font-size: 21px;
+}
+
+.widget ul {
+    margin: 0;
+    padding: 0;
+}
+
+.widget ul li {
+    list-style: none;
+    padding: 2px 10px;
+    font-size:11px;
+}
+.widget ul li a {
+    font-size:14px;
+}
+
+
+/* calendar widget */
+
+.widget_calendar {
+    float: left;
+}
+
+#wp-calendar {
+    width: 100%;
+}
+
+#wp-calendar caption {
+    text-align: right;
+    color: #333;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#wp-calendar thead {
+    font-size: 13px;
+}
+
+#wp-calendar thead th {
+    padding: 10px;
+    text-align: center;
+    background: #354B60;
+    color: #f4f4f4;
+}
+
+#wp-calendar tbody {
+    color: #aaa;
+}
+
+#wp-calendar tbody td {
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 8px;
+}
+
+#wp-calendar tbody td > a {
+    background: #8e44ad;
+    color: #f4f4f4;
+    display: block;
+        margin: -7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#wp-calendar tbody td:hover {
+    background: #f5f5f5;
+}
+
+#wp-calendar tbody .pad {
+    background: none;
+}
+
+#wp-calendar tfoot #next {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#wp-calendar tfoot #prev {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+
+/* footer 
+ ======================*/
+
+.copy-right {
+    font-size: 12px;
+}
+
+
+/* Comments */
+.comment-container {
+    border-top:1px solid #ddd;
+    margin-top:40px;
+}
+
+h3#comments {
+    font-size:18px;
+}
+
+.navigation {}
+
+ol.commentlist {
+    padding:0;
+}
+ol.commentlist li {
+    list-style:none;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+ol.commentlist li .childern {}
+ol.commentlist li .comment-body .comment-meta {
+    position:relative;
+}
+ol.commentlist li .comment-body .comment-meta:after {
+    content: "";
+    display:table;
+    clear:both;
+    margin-bottom:8px;
+}
+ol.commentlist li .comment-body .comment-meta .comment-author {
+    float: left;
+}
+ol.commentlist li .comment-body .comment-meta .comment-author .fn {
+    position:absolute;
+    top:0;
+    left:40px
+}
+ol.commentlist li .comment-body .comment-meta .comment-author .says {
+    display:none;
+}
+ol.commentlist li .comment-body .comment-meta .comment-metadata {
+    padding-top: 20px;
+    padding-left: 40px;
+    font-size:12px;
+    font-style:italic;
+}
+ol.commentlist li .comment-body .comment-meta .comment-awaiting-moderation {
+   padding:20px;
+   margin-bottom:-10px;
+   font-style:italic;
+}
+ol.commentlist li .comment-body .comment-meta .comment-metadata a {
+    color: #827F7F;
+}
+ol.commentlist li .comment-body .comment-content {}
+ol.commentlist li .comment-body .comment-content .reply {}
+
+.navigation {}
+
+div#respond h3 {font-size: 18px;}
+
+/* form comments */
+form#commentform {}
+
+form#commentform input {
+    padding:5px;
+}
+
+input#author {}
+
+input#email {}
+
+input#url {}
+
+textarea#comment {
+    width:70%;
+    padding: 5px;
+}
+
+input#submit {
+    border: 0 none;
+    padding: 18px 24px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 160px;
+    -ms-flex: 0 0 160px;
+    flex: 0 0 160px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 14px;
+    color: #fff;
+    text-transform: none;
+    font-weight: 500;
+    -webkit-transition: all 60ms ease-in-out;
+    transition: all 60ms ease-in-out;
+
+    background: transparent;
+    border: 2px solid #354B60;
+    color: #354B60;
+}
+
+input#submit:hover, input#submit:active {
+    background: #354B60;
+    border-color: #354B60;
+    color: #FFFFFF;
+}
